@@ -4,6 +4,20 @@
 - Есть готовые варианты для LAMP/LEMP стека и классического приложения front, back, db
 
 ## Запуск лабы
+
+Чтобы начать работу с лабой, нужно собрать два Dockerfile
+
+```sh
+docker build -f ansible.Dockerfile . -t ans            # собираем образ для ансибла
+docker build -f ub-lab.Dockerfile . -t my-ub           # собираем образ для убунты, с которой будем работать
+```
+
+Далее запускаем docker-compose
+
+```sh
+docker-compose up -d
+```
+
 После запуска docker-compose зайти в контейнер с ансиблом 
 
 ```sh
