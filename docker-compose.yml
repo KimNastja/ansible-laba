@@ -28,6 +28,7 @@ services:
     ports: 
       - "9001:22"
       - "8181:80"
+    restart: always
 
   back:
     image: my-ub
@@ -38,6 +39,7 @@ services:
       - lab_network
     ports:
       - "9002:22"
+    restart: always
   
 
   db:
@@ -50,4 +52,5 @@ services:
     ports:
       - "9003:22"
       - "3306:3306"
+    restart: always
   
