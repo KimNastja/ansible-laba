@@ -32,4 +32,6 @@ ansible -m ping all -i hosts
 
 Пример того, как должно выглядеть, если всё ок
 
-![N|Solid](img/pong.PNG)
+![N|Solid](img/pong.png)
+
+Если пинг проходит, значит лаба готова к запуску ролей
