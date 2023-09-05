@@ -29,3 +29,7 @@ ssh-copy-id root@db
 ```sh
 ansible -m ping all -i hosts
 ```
+
+Пример того, как должно выглядеть, если всё ок
+
+![N|Solid](img/pong.PNG)
