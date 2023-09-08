@@ -10,6 +10,7 @@ services:
   ansible:
     image: ans
     hostname: ansible
+    container_name: ans
     volumes:
       - ./:/ans
     networks:
@@ -21,6 +22,7 @@ services:
   front:
     image: my-ub
     hostname: front
+    container_name: front
     environment:
       test1: test1
     networks:
@@ -33,6 +35,7 @@ services:
   back:
     image: my-ub
     hostname: back
+    container_name: back
     environment:
       test1: test1
     networks:
@@ -45,6 +48,7 @@ services:
   db:
     image: my-ub
     hostname: db
+    container_name: db
     environment:
       test1: test1
     networks:
@@ -53,4 +57,3 @@ services:
       - "9003:22"
       - "3306:3306"
     restart: always
-  
