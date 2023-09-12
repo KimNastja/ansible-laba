@@ -17,7 +17,7 @@ RUN \
   rm -rf /var/lib/apt/lists/*
 
 # Define working directory.
-WORKDIR /data
+WORKDIR /ans
 
 # Install Ansible.
 RUN pip install ansible
